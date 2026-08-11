@@ -153,7 +153,7 @@ void main() {
       }
     }
     if (!found) {
-      print('${searchQuery} is not available for rent');
+      print('$searchQuery is not available for rent');
     }
   }
 
