@@ -88,10 +88,9 @@ class _HomePageState extends State<HomePage> {
 }*/
 
 import 'package:flutter/material.dart';
-import 'loginscreen.dart';
+import 'todolist.dart';
 
 void main() {
-
   runApp(const MyApp());
 }
 
@@ -102,13 +101,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Flutter Todo App',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const LoginScreen(), // Points straight to your UI
+      // We no longer need to pass dummy data here
+      home: const TodosScreen(),
     );
   }
 }
-
